@@ -3,8 +3,8 @@ html(lang="pt-br")
 	head
 		title No Limite da Previdência
 		meta(charset="utf-8")
-		meta(name="description" content="lorem ipsum dolor sit")
-		meta(name="keywords" content="lorem ipsum dolor sit")
+		meta(name="description" content="A equação do sistema previdenciário brasileiro não é uma conta simples. O desafio de pensar o Brasil do ponto de vista econômico nos ajuda a perceber que o atual modelo de previdência está no limite.")
+		meta(name="keywords" content="Previdência Privada,Previdencia social,Artigo Jaime Vasconcellos,Portal FecomercioSP")
 		meta(name="robots" content="index, follow")
 		meta(name="viewport" content="width=device-width, initial-scale=1")
 		meta(name='baseUrl', content='http://www.fecomercio.com.br/previdencia')
@@ -19,6 +19,8 @@ html(lang="pt-br")
 		meta(property="og:image" content="http://www.fecomercio.com.br/assets/img/fecomercio-sp-image-share.jpg")
 		link(rel="stylesheet", href="css/reset.css")
 		link(rel="stylesheet", href="css/style.css")
+		link(rel="stylesheet", href="slick/slick.css")
+		link(rel="stylesheet", href="slick/slick-theme.css")
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css')			
 	body
 		div.wraper
@@ -37,7 +39,93 @@ html(lang="pt-br")
 					li
 						a(href='https://www.youtube.com/fecomerciosp', target='_blank')
 							i.fa.fa-youtube-play(aria-hidden='true')
-			section.primary
-				p.text-intro  A equação do sistema previdenciário brasileiro não é uma conta simples. E colocar tudo na ponta do lápis, menos ainda. O desafio de pensar o Brasil do ponto de vista econômico nos ajuda a perceber que o atual modelo de previdência está no limite. Em 45 anos, seremos uma nação com 73 milhões de idosos. Por isso, a hora de adotar novas práticas é agora.
-			section.second
+			section.primary#HomePrevidencia
+					p.text-intro A equação do sistema previdenciário brasileiro não é uma conta simples. E colocar tudo na ponta do lápis, menos ainda. O desafio de pensar o Brasil do ponto de vista econômico nos ajuda a perceber que o atual modelo de previdência está no limite. Em 45 anos, seremos uma nação com 73 milhões de idosos. Por isso, a hora de adotar novas práticas é agora.
+					section.cl-effect-10#cl-effect-10
+						a(href="#historiaPrevidencia", data-hover="CONHEÇA A HISTÓRIA")
+							span Conheça a história 
+			section.second#historiaPrevidencia
 				h1.title.title_history-color História
+				div.slider
+					div.item
+						img(src='img/img-historia-01.png')
+					div.item
+						img(src='img/img-historia-02.png')
+					div.item
+						img(src='img/img-historia-03.png')
+					div.item
+						img(src='img/img-historia-04.png')
+					div.item
+						img(src='img/img-historia-05.png')
+					div.item
+						img(src='img/img-historia-06.png')
+					div.item
+						img(src='img/img-historia-07.png')
+					div.item
+						img(src='img/img-historia-08.png')
+					div.item
+						img(src='img/img-historia-09.png')
+					div.item
+						img(src='img/img-historia-10.png')
+					div.item
+						img(src='img/img-historia-11.png')
+					div.item
+						img(src='img/img-historia-12.png')
+					div.item
+						img(src='img/img-historia-13.png')
+					div.item
+						img(src='img/img-historia-14.png')
+					div.item
+						img(src='img/img-historia-15.png')
+					div.item
+						img(src='img/img-historia-16.png')
+					div.item
+						img(src='img/img-historia-17.png')
+					div.item
+						img(src='img/img-historia-18.png')
+					div.item
+						img(src='img/img-historia-19.png')
+					div.item
+						img(src='img/img-historia-20.png')
+					div.item
+						img(src='img/img-historia-21.png')
+					div.item
+						img(src='img/img-historia-22.png')
+					div.item
+						img(src='img/img-historia-23.png')
+					div.item
+						img(src='img/img-historia-24.png')
+					div.item
+						img(src='img/img-historia-25.png')
+					div.item
+						img(src='img/img-historia-26.png')
+					div.item
+						img(src='img/img-historia-27.png')
+					div.item
+						img(src='img/img-historia-28.png')
+					div.item
+						img(src='img/img-historia-29.png')
+					div.item
+						img(src='img/img-historia-30.png')
+					div.item
+						img(src='img/img-historia-31.png')
+					div.item
+						img(src='img/img-historia-32.png')
+					div.item
+						img(src='img/img-historia-33.png')
+					div.item
+						img(src='img/img-historia-34.png')
+					div.item
+						img(src='img/img-historia-35.png')
+					div.item
+						img(src='img/img-historia-36.png')
+					div.item
+						img(src='img/img-historia-37.png')
+					div.item
+						img(src='img/img-historia-38.png')
+					div.item
+						img(src='img/img-historia-39.png')
+
+		script(type='text/javascript', src='js/jquery.min.js')
+		script(type='text/javascript', src='slick/slick.min.js')
+		script(type='text/javascript').$(document).ready(function(){ $('.slider').slick({centerMode: '25px', centerPadding: 1, slidesToShow: 2, slidesToScroll: 2, arrows: true, infinite: true, focusOnSelect: false, easing: true, speed: 700, responsive: [{breakpoint: 768, settings: {arrows: false, centerMode: true, centerPadding: '40px',slidesToShow: 3}}, {breakpoint: 480, settings: {arrows: false,centerMode: true, centerPadding: '40px', slidesToShow: 1}}]});})

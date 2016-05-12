@@ -1,47 +1,58 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gotham";
   src: url("../fonts/Gotham-Book.eot");
-  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg"); }
+  src: url("../fonts/Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Book.woff") format("woff"), url("../fonts/Gotham-Book.ttf") format("truetype"), url("../fonts/Gotham-Book.svg#Gotham-Book") format("svg");
+}
 @font-face {
   font-family: "Gotham Bold";
   src: url("../fonts/Gotham-Bold.eot");
-  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg"); }
+  src: url("../fonts/Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Bold.woff") format("woff"), url("../fonts/Gotham-Bold.ttf") format("truetype"), url("../fonts/Gotham-Bold.svg#Gotham-Bold") format("svg");
+}
 @font-face {
   font-family: "Gotham Light";
   src: url("../fonts/Gotham-Light.eot");
-  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg"); }
+  src: url("../fonts/Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Light.woff") format("woff"), url("../fonts/Gotham-Light.ttf") format("truetype"), url("../fonts/Gotham-Light.svg#Gotham-Light") format("svg");
+}
 @font-face {
   font-family: "Gotham Thin";
   src: url("../fonts/Gotham-Thin.eot");
-  src: url("../fonts/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham-Thin.ttf") format("truetype"), url("../fonts/Gotham-Thin.svg#Gotham-Thin") format("svg"); }
+  src: url("../fonts/Gotham-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham-Thin.woff") format("woff"), url("../fonts/Gotham-Thin.ttf") format("truetype"), url("../fonts/Gotham-Thin.svg#Gotham-Thin") format("svg");
+}
 @font-face {
   font-family: "Yeseva";
   src: url("../fonts/Yeseva.eot");
-  src: url("../fonts/Yeseva.eot?#iefix") format("embedded-opentype"), url("../fonts/Yeseva.woff") format("woff"), url("../fonts/Yeseva.ttf") format("truetype"), url("../fonts/Yeseva.svg#Yeseva") format("svg"); }
+  src: url("../fonts/Yeseva.eot?#iefix") format("embedded-opentype"), url("../fonts/Yeseva.woff") format("woff"), url("../fonts/Yeseva.ttf") format("truetype"), url("../fonts/Yeseva.svg#Yeseva") format("svg");
+}
 .wraper {
   position: relative;
   height: 1900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .links {
   width: 550px;
   float: right;
-  margin: 20px 250px; }
-  .links li {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-right: 20px;
-    cursor: pointer;
-    font-family: Gotham; }
-    .links li:hover:focus:active {
-      color: none;
-      text-decoration: none; }
+  margin: 20px 250px;
+}
+.links li {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: Gotham;
+}
+.links li:hover:focus:active {
+  color: none;
+  text-decoration: none;
+}
 
 li a {
   color: #1c2935;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 div.container {
   position: fixed;
@@ -50,31 +61,124 @@ div.container {
   width: 100%;
   height: 68px;
   float: left;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 .primary {
   height: 700px;
-  margin-top: 68px;
   background: #dadee1 url("../img/bg-home3.jpg") no-repeat center center;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .text-intro {
-  width: 400px;
-  color: #fff;
+  width: 29%;
+  height: 78%;
+  color: white;
   font-family: Gotham;
   font-size: 1em;
   text-align: center;
   line-height: 1.5em;
+  position: relative;
+  left: 35%;
+  top: 46%;
+  z-index: 1;
+}
+
+/* Botão Conheça a História */
+.cl-effect-10 {
+  font-family: Gotham;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.cl-effect-10 a {
+  text-decoration: none;
+  overflow: hidden;
+  margin: 0 15px;
+}
+.cl-effect-10 a span {
+  display: block;
+  padding: 10px 20px;
+  background: #0f7c67;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+.cl-effect-10 a:hover::before {
+  text-decoration: none;
+  transform: translateX(0%);
+}
+.cl-effect-10 a:focus::before {
+  text-decoration: none;
+  transform: translateX(0%);
+}
+.cl-effect-10 a:visited::before {
+  text-decoration: none;
+  transform: translateX(0%);
+}
+.cl-effect-10 a:hover span {
+  text-decoration: none;
+  transform: translateX(100%);
+}
+.cl-effect-10 a:focus span {
+  text-decoration: none;
+  transform: translateX(100%);
+}
+.cl-effect-10 a:visited span {
+  text-decoration: none;
+  transform: translateX(100%);
+}
+.cl-effect-10 a::before {
   position: absolute;
-  left: 38%;
-  top: 18%;
-  z-index: 2; }
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 10px 20px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #0f7c67;
+  content: attr(data-hover);
+  transition: transform 0.3s;
+}
+
+section a {
+  position: absolute;
+  display: inline-block;
+  left: 39%;
+  margin: 30px 25px;
+  outline: none;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+section a:hover {
+  outline: none;
+}
+section a:focus {
+  outline: none;
+}
 
 .second {
   height: 700px;
-  background-color: #dadee1; }
-  .second .title {
-    font-family: "Yeseva";
-    font-size: 4em; }
+  background-color: #dadee1;
+}
 
-/*# sourceMappingURL=style.css.map */
+.title {
+  font-family: "Yeseva";
+  font-size: 4em;
+  padding: 8% 0% 0% 39%;
+}
+
+.slider {
+  margin: 5% auto;
+  width: 701px;
+  height: 365px;
+}
+.slider .item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 300px;
+}
