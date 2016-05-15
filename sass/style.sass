@@ -5,60 +5,83 @@ $box-yellow: #ffc200
 $box-darkblue: #1c2935
 $box-lightgreen: #46d7b7
 
+/* -----------------------------------*/
+/* ---------->>> GLOBAL <<<-----------*/
+/* -----------------------------------*/
+
 .wraper
-	position: relative
 	height: 1900px
 	margin: 0 auto
+	position: relative
+
+/* NAVEGAÇÃO
+//////////////////////////////////////*/
+
 .links
-	width: 550px
+	width: 45%
+	margin: 1.5%
 	float: right
-	margin: 20px 250px
 
 	li
-		display: inline-block
+		font-family: Gotham Bold
+		font-size: 0.9em
 		text-decoration: none
 		text-transform: uppercase
-		margin-right: 20px
+		margin-right: 10px
+		padding: 0.4em
+		border: 1px solid #1c2935
 		cursor: pointer
-		font-family: Gotham
+		display: inline-block
 		&:hover:focus:active
 			color: none
-			text-decoration: none
-li a
-	color: #1c2935
-	text-decoration: none
-	cursor: pointer
+			text-decoration: inherit
+		&:first-child
+			border: none
+			font-size: 0.7em
+			font-family: Gotham
+		&:nth-child(2):before
+			content: '#'
+			color: #1c2935
+			margin: 0 0.3em 0 0	
+	a
+		color: #1c2935
+		text-decoration: inherit
+		cursor: pointer
+
 div.container
-	position: fixed
-	top: 0px
 	background-color: rgba(255,255,255, 0.7)
 	width: 100%
 	height: 68px
-	float: left
+	position: fixed
 	z-index: 1000
+
+//////////////////////////////////////*/
+
+
+/* SEÇÕES SITE */
+
 .primary
 	height: 700px
 	background: #dadee1 url('../img/bg-home3.jpg') no-repeat center center
+	position: relative
 	z-index: 1
 
 .text-intro
-	width: 29%
-	height: 78%
-	color: #fff
-	font-family: Gotham
-	font-size: 1em
+	font: normal 1em/1.5em Gotham
 	text-align: center
-	line-height: 1.5em
+	color: #fff
+	width: 33%
+	margin: 25% 0% 2% 32%
+	//background-color: red
+	display: inline-block
 	position: relative
-	left: 35%
-	top: 46%
 	z-index: 1
 
 @import buttons
 
 .second
-	height: 700px
 	background-color: #dadee1
+	height: 700px
 
 .title
 	font-family: 'Yeseva'
@@ -73,3 +96,4 @@ div.container
 		height: 100%
 		text-align: center
 		line-height: 300px
+
