@@ -52,7 +52,7 @@
 }
 .links li:hover:focus:active {
   color: none;
-  text-decoration: inherit;
+  text-decoration: none;
 }
 .links li:first-child {
   border: none;
@@ -64,9 +64,9 @@
   color: #1c2935;
   margin: 0 0.3em 0 0;
 }
-.links a {
+.links li a {
   color: #1c2935;
-  text-decoration: inherit;
+  text-decoration: none;
   cursor: pointer;
 }
 
